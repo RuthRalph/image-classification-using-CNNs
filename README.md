@@ -22,3 +22,9 @@ Flatten	 5×5×16	        400	             Flatten 3D tensor to 1D vector
 FC1	     400	          120	             Fully connected, followed by ReLU
 FC2	     120	          84	             Fully connected, followed by ReLU
 Output	 84	            10	             Output logits for 10 CIFAR-10 classes
+
+Performance Comparison
+Metric	   MLP (NB03) LeNet (NB04)
+Accuracy	 0.4098	    0.6052
+Macro F1	 0.3933	    0.6034
+LeNet significantly outperforms the MLP on both accuracy and F1-score. The improvement of ~20% shows how well CNNs handle spatial data compared to MLPs.
