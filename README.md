@@ -4,3 +4,9 @@ The other image classification used MLP, among its limitations, it flatten image
 What I did here: I explored two classical CNNs that laid the foundation for modern deep vision (LeNet & AlexNet):
 Implement LeNet — one of the earliest CNNs, by Yann LeCun.
 Build a simplified AlexNet — a deeper network that won ImageNet 2012.
+
+Component	  Purpose
+Conv2d	    Detects local patterns in image patches
+ReLU	      Enables non-linear transformations
+MaxPool2d	  Reduces size, adds robustness
+Linear	    Final decision-making (classification)
